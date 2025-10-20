@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hiristic</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f5f7fa;
+    }
+
+    .container {
+      width: 900px;
+      height: 500px;
+      display: flex;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .left, .right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      text-align: center;
+    }
+
+    .left {
+      background: #d46511;
+    }
+    
+    .right {
+      background: #a3071e;
+    }
+
+    .title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .illustration {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      background-color: rgba(255,255,255,0.2);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+
+    .btn {
+      background: white;
+      color: #a3071e;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 10px;
+      transition: 0.3s;
+    }
+
+    .right .btn {
+      color: #a3071e;
+    }
+
+    .btn:hover {
+      opacity: 0.85;
+    }
+
+    .login-text {
+      margin-top: 10px;
+      font-size: 0.9rem;
+    }
+
+    .login-text a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    .center-box {
+      position: absolute;
+      background: white;
+      color: #a3071e;
+      padding: 15px 30px;
+      border-radius: 12px;
+      font-weight: 700;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+      }
+
+      .center-box {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <h2 class="title">I'm here for NewDev</h2>
+      <div class="illustration">👔</div>
+      <a href="#" class="btn">OPEN NEWDEV DASHBOARD</a>
+    </div>
+
+    <div class="center-box">Offsec Web Application</div>
+
+    <div class="right">
+      <h2 class="title">I'm here for Offsec</h2>
+      <div class="illustration">💼</div>
+      <a href="#" class="btn">OPEN OFFSEC DASHBOARD</a>
+    </div>
+  </div>
+</body>
+</html>
